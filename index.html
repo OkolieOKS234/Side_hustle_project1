@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="error-message" class="error-message" style="display: none; color: red;">
+        Please enter valid inputs for all fields.
+      </div>
+      
+      <div id="success-message" class="success-message" style="display: none; color: green;">
+        Form submitted successfully!
+      </div>
 <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name">
@@ -32,14 +39,8 @@
     <button type="submit" onclick="validateForm()">Submit</button>
   </form>
   
-  <div id="error-message" style="display: none; color: red;">
-    Please enter valid inputs for all fields.
-  </div>
-  
-  <div id="success-message" style="display: none; color: green;">
-    Form submitted successfully!
-  </div>
-  
+ 
+   
   <script src="./script.js"></script>
  
 

@@ -44,3 +44,9 @@ option{
 option:checked{
     background-color: red;
 }
+.error-message, .success-message{
+   
+    /* max-width: 100%; */
+  
+    margin-left: 40.5%;
+}
