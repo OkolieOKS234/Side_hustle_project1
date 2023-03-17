@@ -110,15 +110,10 @@ padding: 3px;
     border-color: forestgreen;
   }
   
-  .form__input:valid + .icon::after {
-    content: '😃';
-  }
-  
+ 
   .form__input:invalid {
     border-color: firebrick;
   }
   
-  .form__input:invalid + .icon::after {
-    content: '😳';
-  }
+ 
   
