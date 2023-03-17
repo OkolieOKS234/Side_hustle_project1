@@ -10,6 +10,7 @@ function validateForm() {
     let isValid = true;
 
     if (nameInput.value === '') {
+
       nameInput.style.borderColor = 'red';
       isValid = false;
     } else {
@@ -45,13 +46,14 @@ function validateForm() {
     }
 
     if (isValid) {
-      successMessage.style.display = 'block';
-      errorMessage.style.display = 'none';
+      // successMessage.style.display = 'block';
+      // errorMessage.style.display = 'none';
       alert("Successfully submitted")
     
     } else {
-      errorMessage.style.display = 'block';
-      successMessage.style.display = 'none';
+      // errorMessage.style.display = 'block';
+      // successMessage.style.display = 'none';
+      alert("fill in your details")
     }
   }
 

@@ -1,6 +1,19 @@
-body{
-    background-color: #111;
-}
+body {
+    font: 1em/1.618 Inter, sans-serif;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    padding: 30px;
+    
+    color: #224;
+    background:
+      url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+      center / cover no-repeat fixed;
+  }
+  
 form{
     display: flex;
     flex-direction: column;
@@ -8,11 +21,23 @@ form{
     justify-content: center;
    margin: auto;
    margin-top: 10%;
-   background-color: rgba(0,0,0,0.5);
-   padding: 20px;
-   box-shadow: 0px 0px 2px;
-   color: #fff;
-   backdrop-filter: blur(5px);
+   max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 500px;
+  height: 300px;
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+
 
 }
 
@@ -27,12 +52,19 @@ button{
     margin-top: 20px;
     border: none;
     border-radius: 5px;
+    height: 25px;
+    backdrop-filter: blur(5px);
+}
+button:hover{
+    background-color: #fff;
+    cursor: pointer;
 }
 /* Dropdown menu */
 
 select{
 background-color: aliceblue;
 border: none;
+
 }
 select:focus{
     border: none;
@@ -50,6 +82,43 @@ option:checked{
   
     margin-left: 40.5%;
 }
-input{
-    background-color: #fff;
+input, select,option{
+    border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
 }
+.form__input{
+border-radius: 0.25em;
+border-style: solid;
+border-width: 2px;
+padding: 3px;
+}
+/* Icon */
+.icon {
+    position: absolute;
+    right: 1em;
+    top: 74.7%;
+    transform: translateY(-50%);
+    left: 75%;
+  }
+
+
+.form__input:valid {
+    border-color: forestgreen;
+  }
+  
+  .form__input:valid + .icon::after {
+    content: '😃';
+  }
+  
+  .form__input:invalid {
+    border-color: firebrick;
+  }
+  
+  .form__input:invalid + .icon::after {
+    content: '😳';
+  }
+  
